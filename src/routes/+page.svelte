@@ -46,6 +46,7 @@
                 href={"https://www.washingtonpost.com/crossword-puzzles/sunday-evan-birnholz/"}
                 imgRef={"https://wapo.amuselabs.com/minimeta/images/thumbnail/crossword_thumb_black.svg"}
                 gameName={"Sunday Crossword"}
+                smallText={true}
                 frequency={"Weekly"}
                 inverseTag={true}
                 logo={"https://upload.wikimedia.org/wikipedia/commons/b/bf/Washington_Post_favicon.png"}
