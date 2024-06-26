@@ -13,7 +13,7 @@
                 imgRef={"https://www.nytimes.com/games-assets/v2/assets/icons/connections.svg"}
                 gameName={"Connections"}
                 frequency={"Daily"}
-                logo={"src/lib/components/NYTLogo.svg"}
+                logo={"https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"}
             ></GameWidget>
             <GameWidget
                 color={"bg-strands"}
@@ -21,7 +21,7 @@
                 imgRef={"https://www.nytimes.com/games/prototype/dist/strands100px.ea3b90d2.svg"}
                 gameName={"Strands"}
                 frequency={"Daily"}
-                logo={"src/lib/components/NYTLogo.svg"}
+                logo={"https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"}
             ></GameWidget>
             <GameWidget
                 color={"bg-white"}
@@ -30,7 +30,7 @@
                 gameName={"The Mini"}
                 frequency={"Daily"}
                 inverseTag={true}
-                logo={"src/lib/components/NYTLogo.svg"}
+                logo={"https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"}
             ></GameWidget>
             <GameWidget
                 color={"bg-white"}

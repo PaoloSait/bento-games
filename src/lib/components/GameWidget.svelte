@@ -33,7 +33,7 @@
         <div
             class="absolute top-0 left-0 bg-white pl-4 pt-4 pr-6 pb-6 rounded-br-full"
         >
-            <img class="md:w-6 md:h-6 h-4 w-4" src={logo} alt="" />
+            <img class="md:w-6 md:h-6 h-4 w-4  object-contain" src={logo} alt="" />
         </div>
     {/if}
 </a>
