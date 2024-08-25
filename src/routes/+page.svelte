@@ -76,13 +76,42 @@
                 inverseTag={true}
             ></GameWidget>
             <GameWidget
-                color={"bg-[#557a98]"}
-                href={"https://housle.house/"}
-                imgRef={"https://housle.house/static/media/housle_logo.3e1a37cb30c92f10930f.png"}
-                gameName={"Housle"}
+                color={"bg-[#31302e]"}
+                href={"https://travle.earth"}
+                imgRef={"https://travle.earth/assets/apple-touch-icon-1024x1024.png"}
+                gameName={"Travle"}
                 frequency={"Daily"}
                 nameColor={"text-white"}
             ></GameWidget>
+            <GameWidget
+                color={"bg-[#bc1d1d]"}
+                href={"https://framed.wtf/"}
+                imgRef={"https://framed.wtf/icons/apple-touch-icon.png"}
+                gameName={"Framed"}
+                frequency={"Daily"}
+                nameColor={"text-white"}
+            ></GameWidget>
+            <GameWidget
+                color={"bg-[#1b1b1b]"}
+                href={"https://episode.wtf/"}
+                imgRef={"https://episode.wtf/icons/apple-touch-icon.png"}
+                gameName={"Episode"}
+                frequency={"Weekly"}
+                nameColor={"text-white"}
+            ></GameWidget>
+            <GameWidget
+                color={"bg-[#ff7070]"}
+                href={"https://www.techyonic.co/swiftle"}
+                imgRef={"https://www.techyonic.co/favicon.ico"}
+                gameName={"Swiftle"}
+                frequency={"Daily"}
+                nameColor={"text-black"}
+                inverseTag={true}
+            ></GameWidget>
+
+            
+
+            
         </div>
     </div>
 </body>
