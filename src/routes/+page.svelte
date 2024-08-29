@@ -108,10 +108,18 @@
                 nameColor={"text-black"}
                 inverseTag={true}
             ></GameWidget>
+            <GameWidget
+                color={"bg-[#d6e8ff]"}
+                href={"https://www.minutecryptic.com/"}
+                imgRef={"https://www.minutecryptic.com/icon.ico?73f70e8b5bf80676"}
+                gameName={"Minute Cryptic"}
+                frequency={"Daily"}
+                nameColor={"text-black"}
+                inverseTag={true}
+            ></GameWidget>
 
             
 
-            
         </div>
     </div>
 </body>
