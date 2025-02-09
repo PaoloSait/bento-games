@@ -16,12 +16,13 @@
                 logo={"https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"}
             ></GameWidget>
             <GameWidget
-                color={"bg-strands"}
-                href={"https://www.nytimes.com/games/strands"}
-                imgRef={"https://www.nytimes.com/games-assets/v2/metadata/strands-favicon.ico?v=v2410021032"}
-                gameName={"Strands"}
-                frequency={"Daily"}
-                logo={"https://1000logos.net/wp-content/uploads/2017/04/Symbol-New-York-Times.png"}
+                color={"bg-gradient-to-r from-[#df8e33] via-[#be2b23] to-[#be2c25]"}
+                href={"https://www.washingtonpost.com/news-quiz/?itid=sn_crosswords%20&%20games_3"}
+                imgRef={"https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNV9hX3N0dWRpb19zaG90X29mX2RvZ193YXZpbmdfaW1hZ2VzZnVsbF9ib2R5X2lzb185ZGZhMTMwMS0xZTJhLTQ2Y2UtOWM5Yy0yNzFkZDJlM2Y3ZmEucG5n.png"}
+                gameName={"On the Record"}
+                frequency={"Weekly"}
+                nameColor={"text-white"}
+                logo={"https://upload.wikimedia.org/wikipedia/commons/b/bf/Washington_Post_favicon.png"}
             ></GameWidget>
             <GameWidget
                 color={"bg-white"}
