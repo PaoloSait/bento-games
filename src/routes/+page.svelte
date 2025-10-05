@@ -103,6 +103,15 @@
                 nameColor={"text-white"}
             ></GameWidget>
             <GameWidget
+                color={"bg-[#EAE8DD]"}
+                href={"https://timeguessr.com/roundonedaily"}
+                imgRef={"/time-guessr-text-logo.svg"}
+                gameName={"TimeGuessr"}
+                frequency={"Daily"}
+                nameColor={"text-black"}
+            ></GameWidget>
+<!--             
+            <GameWidget
                 color={"bg-[#f2f2f2]"}
                 href={"https://gisnep.com/"}
                 imgRef={"https://gisnep.com/safari-pinned-tab.svg"}
@@ -128,7 +137,7 @@
                 gameName={"Popidle"}
                 frequency={"Daily"}
                 inverseTag={true}
-            ></GameWidget>
+            ></GameWidget> -->
         </div>
     </div>
 </body>
