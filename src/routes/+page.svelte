@@ -110,7 +110,17 @@
                 frequency={"Daily"}
                 nameColor={"text-black"}
             ></GameWidget>
-<!--             
+            <GameWidget
+                color={"bg-[#f4ecdd]"}
+                href={"https://www.theatlantic.com/games/bracket-city"}
+                imgRef={"https://cdn.theatlantic.com/media/games/bracket_city_emblem_v2.png"}
+                gameName={"Bracket City"}
+                frequency={"Daily"}
+                nameColor={"text-black"}
+                inverseTag={true}
+                logo={"https://cdn.theatlantic.com/_next/static/images/apple-touch-icon-152x152-aafde20dd981a38fcd549b29b2b3b785.png"}
+            ></GameWidget>
+<!--
             <GameWidget
                 color={"bg-[#f2f2f2]"}
                 href={"https://gisnep.com/"}
