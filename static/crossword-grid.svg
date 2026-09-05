@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Generic crossword-grid icon: black on transparent, so `dark:invert` flips it cleanly -->
+  <g fill="none" stroke="#000000" stroke-width="4">
+    <rect x="4" y="4" width="56" height="56" rx="4"/>
+    <path d="M22.67 4v56M41.33 4v56M4 22.67h56M4 41.33h56"/>
+  </g>
+  <g fill="#000000">
+    <rect x="41.33" y="4" width="18.67" height="18.67" rx="2"/>
+    <rect x="4" y="41.33" width="18.67" height="18.67" rx="2"/>
+  </g>
+</svg>

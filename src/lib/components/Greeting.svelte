@@ -14,4 +14,6 @@
     else greet = "Error";
 </script>
 
-<div class="md:text-5xl text-3xl mx-[1vw] font-header">{greet}</div>
+<div class="md:text-5xl text-3xl mx-[1vw] font-header dark:text-[#f0ebe6]">
+    {greet}
+</div>

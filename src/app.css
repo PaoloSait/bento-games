@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /* Follow the system/browser colour scheme (form controls, scrollbars, etc.) */
+    :root {
+        color-scheme: light dark;
+    }
+
+    /* Set on <html> so overscroll / rubber-banding shows the right colour too. */
+    html {
+        background-color: #f0ebe6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        html {
+            background-color: #14120f;
+        }
+    }
+}

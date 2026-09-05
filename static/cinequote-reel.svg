@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- CineQuote film-reel mark, drawn locally so it works on the dark tile -->
+  <circle cx="32" cy="32" r="29" fill="#feec4d"/>
+  <g fill="#111111">
+    <circle cx="32" cy="32" r="6.5"/>
+    <circle cx="32" cy="15" r="5.5"/>
+    <circle cx="48.2" cy="26.7" r="5.5"/>
+    <circle cx="42" cy="45.8" r="5.5"/>
+    <circle cx="22" cy="45.8" r="5.5"/>
+    <circle cx="15.8" cy="26.7" r="5.5"/>
+  </g>
+</svg>
