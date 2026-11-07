@@ -137,6 +137,15 @@
                 inverseTag={true}
                 logo={"https://cdn.theatlantic.com/_next/static/images/apple-touch-icon-152x152-aafde20dd981a38fcd549b29b2b3b785.png"}
             ></GameWidget>
+            <GameWidget
+                color={"bg-[#124a7a]"}
+                href={"https://krillion.io/"}
+                darkColor={"dark:bg-[#16324f]"}
+                imgRef={"https://krillion.io/apple-icon.png"}
+                gameName={"Krillion"}
+                frequency={"Daily"}
+                nameColor={"text-white"}
+            ></GameWidget>
 <!--
             <GameWidget
                 color={"bg-[#f2f2f2]"}
