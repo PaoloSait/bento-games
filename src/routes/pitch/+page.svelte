@@ -232,10 +232,15 @@
     // ---------------------------------------------------------------------
     // Share
     // ---------------------------------------------------------------------
+    // Absolute URLs: share previews (WhatsApp, iMessage...) need them.
+    const SITE = "https://bento-games.vercel.app";
+    const PAGE_URL = `${SITE}/pitch`;
+    const SHARE_DESC = "Hear a note. Find it on the piano, name it, then find it on the guitar. Fewest misses wins.";
+
     const row = (n: number) => "🟥".repeat(n) + "🟩";
     $: total = result ? result.piano + result.name + result.guitar : 0;
     $: shareText = result
-        ? `Pitch${mode === "daily" ? ` #${puzzleNumber()}` : " (practice)"}\n🎹 ${row(result.piano)}\n🔤 ${row(result.name)}\n🎸 ${row(result.guitar)}\n${total === 0 ? "Perfect ear!" : `${total} miss${total === 1 ? "" : "es"}`}`
+        ? `Pitch${mode === "daily" ? ` #${puzzleNumber()}` : " (practice)"}\n🎹 ${row(result.piano)}\n🔤 ${row(result.name)}\n🎸 ${row(result.guitar)}\n${total === 0 ? "Perfect ear!" : `${total} miss${total === 1 ? "" : "es"}`}\n${PAGE_URL}`
         : "";
 
     async function share() {
@@ -253,6 +258,20 @@
 
 <svelte:head>
     <title>Pitch · Bento Games</title>
+    <meta name="description" content={SHARE_DESC} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bento Games" />
+    <meta property="og:title" content="Pitch — a daily ear-training game" />
+    <meta property="og:description" content={SHARE_DESC} />
+    <meta property="og:url" content={PAGE_URL} />
+    <meta property="og:image" content={`${SITE}/pitch-og.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pitch: hear a note, find it on the piano, name it, then find it on the guitar." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pitch — a daily ear-training game" />
+    <meta name="twitter:description" content={SHARE_DESC} />
+    <meta name="twitter:image" content={`${SITE}/pitch-og.png`} />
 </svelte:head>
 
 <div class="min-h-screen flex flex-col items-center text-[#1d1b18] dark:text-[#f0ebe6]">
