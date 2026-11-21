@@ -35,7 +35,17 @@
         }
         return h >>> 0;
     }
-    const noteForSeed = (seed: string) => LOW + (hash("pitch:" + seed) % (HIGH - LOW + 1));
+    // Chained from launch day so a note never repeats on consecutive days:
+    // each day moves 1..36 places around the 37-note range (never 0).
+    // Deterministic, so every player gets the same note for the same date.
+    const RANGE = HIGH - LOW + 1;
+    function noteForDay(n: number) {
+        let i = hash("pitch:2026-11-21") % RANGE; // day #1 (F4)
+        for (let d = 2; d <= n; d++) {
+            i = (i + 1 + (hash(`pitch:day:${d}`) % (RANGE - 1))) % RANGE;
+        }
+        return LOW + i;
+    }
 
     // ---------------------------------------------------------------------
     // Audio (Web Audio synth, no samples)
@@ -86,7 +96,7 @@
     type Result = { piano: number; name: number; guitar: number };
 
     let mode: "daily" | "practice" = "daily";
-    let note: number = noteForSeed(todayKey());
+    let note: number = noteForDay(Math.max(1, puzzleNumber()));
     let stage: Stage = "intro";
     let pianoRight: number | null = null;
     let pianoWrong: number[] = [];
@@ -233,7 +243,7 @@
     // Share
     // ---------------------------------------------------------------------
     // Absolute URLs: share previews (WhatsApp, iMessage...) need them.
-    const SITE = "https://bento-games.vercel.app";
+    const SITE = "https://bento-games.paolosait.com";
     const PAGE_URL = `${SITE}/pitch`;
     const SHARE_DESC = "Hear a note. Find it on the piano, name it, then find it on the guitar. Fewest misses wins.";
 
