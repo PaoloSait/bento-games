@@ -8,6 +8,8 @@
     export let nameColor: string = "text-black";
     export let inverseTag: boolean = false;
     export let smallText: boolean = false;
+    // Built-in games live on this site, so open in the same tab.
+    export let internal: boolean = false;
 
     // Dark mode. `darkColor` / `darkNameColor` take fully-written Tailwind
     // classes (i.e. including the `dark:` prefix) so Tailwind can see them in
@@ -20,8 +22,8 @@
 
 <a
     {href}
-    target="_blank"
-    rel="noopener noreferrer"
+    target={internal ? undefined : "_blank"}
+    rel={internal ? undefined : "noopener noreferrer"}
     class={`${color} ${darkColor} relative hover:brightness-75 dark:hover:brightness-125 dark:ring-1 dark:ring-inset dark:ring-white/10 bg-background-grey text-background-black rounded-[2rem] md:h-[20vw] h-[40vw] md:w-[20vw] w-[40vw] overflow-hidden m-[1vw] md:mb-0 mb-3 p-2 flex flex-col items-center justify-center gap-2`}
 >
     <img

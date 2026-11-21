@@ -8,6 +8,17 @@
         <Greeting />
         <div class="flex flex-wrap">
             <GameWidget
+                color={"bg-[#f7c948]"}
+                href={"/pitch"}
+                internal={true}
+                darkColor={"dark:bg-[#3d3215]"}
+                darkImgInvert={true}
+                imgRef={"/pitch-icon.svg"}
+                gameName={"Pitch"}
+                frequency={"Daily"}
+                inverseTag={true}
+            ></GameWidget>
+            <GameWidget
                 color={"bg-connections-purple"}
                 href={"https://www.nytimes.com/games/connections"}
                 darkColor={"dark:bg-[#3b3178]"}
